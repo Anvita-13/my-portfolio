@@ -95,7 +95,7 @@ docker build -t portfolio-app .
 
 ### Run Container
 ```bash
-docker run -p 3000:80 container portfolio-app
+docker run -d -p 3000:80 --name my-portfolio portfolio-app
 ```
 
 The application will be available at:
