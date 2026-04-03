@@ -120,21 +120,6 @@ or rebuild the Docker container.
 
 ---
 
-## Highlights and Projects
-
-**Predictive Vehicle Health Maintenance**
-A system using synthetic service data, Power BI analytics, and machine learning to predict component health and enable proactive fleet maintenance.
-
-**RailServe – Railway Station Management System**
-A relational database system designed with ER modeling, BCNF normalization, and SQL implementation, with planned frontend integration.
-
-**Web Attention Analytics System**
-A Chrome extension and dashboard to capture and analyze user attention patterns using normalized interaction data.
-
-**Inspire MANAK Award**
-Recognized at the Tamil Nadu District level by the Department of Science and Technology (Government of India) for proposing a wearable smart device for the hearing challenged using Arduino.
-
----
 
 ## Future Improvements
 
@@ -149,17 +134,3 @@ Recognized at the Tamil Nadu District level by the Department of Science and Tec
 ## Contributing
 
 Contributions are welcome. Suggestions, improvements, or issues can be submitted through pull requests or issue tracking.
-
----
-
-## License
-
-This project is licensed under the MIT License.
-
----
-
-## Contact
-
-**Anvita Arun**
-Chennai, Tamil Nadu, India
-Email: anvitaarun1@gmail.com
