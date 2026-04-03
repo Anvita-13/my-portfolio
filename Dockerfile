@@ -10,8 +10,8 @@ FROM node:20-alpine AS builder
 
 WORKDIR /app
 
-# Copy only package files first for better layer caching
-COPY package*.json ./
+# Copy only package.json to prevent lockfile conflicts across OS environments
+COPY package.json ./
 RUN npm install
 
 # Copy source and build
