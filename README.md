@@ -1,48 +1,165 @@
-# Anvita Arun | Personal Portfolio ✨
+# Anvita Arun | Personal Portfolio
 
-Welcome to the repository for my personal portfolio! This is a modern, responsive, and elegant single-page application built to showcase my academic background, technical skills, projects, and accomplishments.
-
-![Portfolio Preview](./public/favicon.svg)
+A modern, responsive, single-page portfolio application built using React to showcase academic background, technical skills, projects, and accomplishments. The project emphasizes clean design, modular architecture, and ease of future updates.
 
 ---
 
-## 👤 About Me
-I'm a **Second Year B.Tech Computer Science student** at Vellore Institute of Technology (VIT), Chennai, and I'm simultaneously pursuing a **BS in Data Science and Applications** from IIT Madras. 
+## Description
 
-I am deeply passionate about building practical solutions that lie at the intersection of data, software engineering, and creative problem-solving. My technical interests span across Machine Learning, Full-Stack Web Development, Database Management, and Embedded Electronics.
-
-*When I'm not coding, you can find me practicing Bharatanatyam, training in Carnatic Music, or capturing moments through photography.*
+This portfolio serves as a centralized platform to present my work, technical capabilities, and achievements as a Computer Science student. It is designed with a focus on simplicity, maintainability, and performance, while providing a visually appealing user experience.
 
 ---
 
-## 🌟 Highlights & Projects
+## Features
 
-*   **Predictive Vehicle Health Maintenance:** Utilizing synthetic service data, Power BI, and Machine Learning to help fleet operators predict component health and perform proactive maintenance.
-*   **RailServe - Railway Station Management System:** A robust database-centric solution featuring strict ER modeling, BCNF normalization, and SQL implementations.
-*   **Web Attention Analytics System:** A UX analytics platform consisting of a Chrome Extension and a Data Dashboard to capture and visualize user attention patterns.
-*   **Inspire MANAK Award Winner:** Recognized at the Tamil Nadu District level by the DST (Govt. of India) for designing an Arduino-based wearable smart device for the hearing challenged.
-
----
-
-## 💻 Technical Infrastructure
-
-The portfolio is engineered for high performance, maintainability, and clean design. It embraces a strict separation of concerns, ensuring that **all content acts as configuration**, cleanly decoupled from the React rendering logic.
-
-*   **Frontend Ecosystem:** React 18 / Vite
-*   **Design Concept:** Glassmorphism, smooth scrolling, intelligent Intersection-Observer fade animations. 
-*   **Styling:** Pure Vanilla CSS using CSS Variables for robust design token management.
-*   **Deployment Ready:** Ships with a tightly optimized, multi-stage `Dockerfile` utilizing Nginx for wicked-fast static file delivery.
+- Single-page responsive design
+- Smooth scrolling navigation across sections
+- Subtle animations using Intersection Observer
+- Modular and reusable React components
+- Content-driven architecture for easy updates
+- Clean and minimal UI with modern styling
+- Docker support for containerized deployment
+- Optimized static build served via Nginx
 
 ---
 
-## 🚀 How to Run & Update
+## Tech Stack
 
-For specific instructions on how to install dependencies, run the application locally or via Docker, and how to update the website's content, please refer to the technical guide:
+**Frontend:**
+- React 18
+- Vite
+- JavaScript
+- HTML5
+- CSS3
 
-👉 **[Read the Technical Operations Guide (steps-to-run.md)](./steps-to-run.md)**
+**Design & Architecture:**
+- Component-based architecture
+- CSS variables for theming
+- Intersection Observer for animations
+
+**DevOps & Deployment:**
+- Docker
+- Nginx
 
 ---
 
-<div align="center">
-  <i>Built with React by Anvita Arun.</i>
-</div>
+## Project Structure
+
+```text
+my-portfolio/
+│
+├── public/                 # Static assets
+├── src/                    # Source code
+│   ├── components/         # Reusable React components mapped by section
+│   ├── data/               # Centralized content definitions
+│   ├── hooks/              # Custom React hooks
+│   ├── App.jsx             # Main application layout
+│   ├── index.css           # Global design tokens and styles
+│   └── main.jsx            # Application entry point
+│
+├── Dockerfile              # Multi-stage Docker build configuration
+├── .dockerignore           # Exclusions for Docker build context
+├── .gitignore              # Git exclusions
+├── package.json            # Node.js dependencies
+└── README.md               # Project documentation
+```
+
+---
+
+## Installation and Setup
+
+### Prerequisites
+- Node.js (v18 or higher recommended)
+- npm
+
+### Steps
+
+```bash
+git clone https://github.com/Anvita-13/my-portfolio.git
+cd my-portfolio
+npm install
+npm run dev
+```
+
+The application will run locally on:
+`http://localhost:5173`
+
+---
+
+## Running with Docker
+
+### Build Docker Image
+```bash
+docker build -t portfolio-app .
+```
+
+### Run Container
+```bash
+docker run -p 3000:80 container portfolio-app
+```
+
+The application will be available at:
+`http://localhost:3000`
+
+---
+
+## Usage and Updates
+
+The project is structured so that content can be updated without modifying core components.
+
+- Update personal information, projects, and details inside the `src/data/portfolioData.js` file.
+- Modify UI components inside `src/components/`.
+- Styling changes can be made in CSS files using defined CSS variables for consistency.
+
+To reflect updates in production environments:
+
+```bash
+npm run build
+```
+or rebuild the Docker container.
+
+---
+
+## Highlights and Projects
+
+**Predictive Vehicle Health Maintenance**
+A system using synthetic service data, Power BI analytics, and machine learning to predict component health and enable proactive fleet maintenance.
+
+**RailServe – Railway Station Management System**
+A relational database system designed with ER modeling, BCNF normalization, and SQL implementation, with planned frontend integration.
+
+**Web Attention Analytics System**
+A Chrome extension and dashboard to capture and analyze user attention patterns using normalized interaction data.
+
+**Inspire MANAK Award**
+Recognized at the Tamil Nadu District level by the Department of Science and Technology (Government of India) for proposing a wearable smart device for the hearing challenged using Arduino.
+
+---
+
+## Future Improvements
+
+- Add live deployment and hosting
+- Integrate backend services for dynamic content
+- Enhance animations and UI interactions
+- Add analytics for visitor tracking
+- Improve accessibility and SEO optimization
+
+---
+
+## Contributing
+
+Contributions are welcome. Suggestions, improvements, or issues can be submitted through pull requests or issue tracking.
+
+---
+
+## License
+
+This project is licensed under the MIT License.
+
+---
+
+## Contact
+
+**Anvita Arun**
+Chennai, Tamil Nadu, India
+Email: anvitaarun1@gmail.com
