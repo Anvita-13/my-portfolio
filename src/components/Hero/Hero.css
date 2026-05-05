@@ -41,7 +41,7 @@
   padding: 60px 0 80px;
 }
 
-/* Badge pill above name */
+/* Badge pill below title */
 .hero__badge {
   display: inline-flex;
   align-items: center;
@@ -54,6 +54,7 @@
   font-weight: 600;
   color: var(--color-accent);
   letter-spacing: 0.04em;
+  margin-top: 20px;
   margin-bottom: 28px;
 
   animation: fadeInUp 0.7s ease both;

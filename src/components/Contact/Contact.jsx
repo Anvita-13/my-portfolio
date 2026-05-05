@@ -22,7 +22,7 @@ export default function Contact({ personal }) {
       icon: '📱',
       label: 'Phone',
       value: personal.phone,
-      href: `tel:${personal.phone.replace(/\s/g, '')}`,
+      href: null,
     },
   ];
 

@@ -5,7 +5,7 @@
 export const personal = {
   name: "Anvita Arun",
   title: "Second Year Engineering Student",
-  tagline: "Building thoughtful solutions at the intersection of code, data, and creativity.",
+  tagline: "Open to opportunities",
   location: "Chennai",
   phone: "+91 89399 48844",
   email: "anvitaarun1@gmail.com",
@@ -76,24 +76,42 @@ export const skills = [
 export const projects = [
   {
     title: "Predictive Vehicle Health Maintenance",
-    subtitle: "Solution for Fleet Operators",
-    description:
-      "Developing a Predictive Vehicle Health Maintenance system using synthetic service data, Power BI analytics, and machine learning to predict component health and support proactive fleet maintenance.",
-    tags: ["Machine Learning", "Power BI", "Data Analytics", "Python"],
+    summary: "Machine learning-based predictive maintenance system for vehicle component failure identification",
+    points: [
+      "Developed a predictive maintenance system to identify vehicle component failures",
+      "Conducted Exploratory Data Analysis (EDA) on vehicle usage and service history",
+      "Implemented and evaluated multiple ML models (Logistic Regression, Random Forest, XGBoost, Naive Bayes)",
+      "Selected Random Forest based on accuracy, precision, recall, and F1-score metrics",
+      "Built interactive Power BI dashboards to visualize trends and feature importance"
+    ],
+    tags: ["Python", "Pandas", "Scikit-learn", "Power BI"],
+    github: "https://github.com/Anvita-13/predictive-vehicle-health-maintenance.git",
   },
   {
     title: "RailServe",
-    subtitle: "Railway Station Management System",
-    description:
-      "Developing a relational Railway Station Management System with ER modeling, BCNF normalization, and SQL implementation, with planned front-end integration and database connectivity.",
-    tags: ["SQL", "Oracle", "Database Design", "ER Modeling"],
+    summary: "Database-driven railway management system for station operations and ticketing",
+    points: [
+      "Designed a railway management system for station operations and ticketing",
+      "Created ER diagrams and relational schema with BCNF normalization",
+      "Implemented SQL queries, constraints, and CRUD operations",
+      "Managed passenger records, reservations, and payment handling",
+      "Built frontend interface with backend connectivity for schedules and operations"
+    ],
+    tags: ["Oracle SQL", "Flask", "HTML/CSS", "JavaScript"],
+    github: "https://github.com/Anvita-13/railserve-railway-management-system.git",
   },
   {
-    title: "Web Attention Analytics System",
-    subtitle: "Chrome Extension + Data Dashboard",
-    description:
-      "Building a Chrome extension that records normalized mouse and gaze coordinates with dwell time to analyze user attention patterns via a data dashboard.",
-    tags: ["JavaScript", "Chrome Extension", "UX Analytics", "Data Visualization"],
+    title: "Traffic Mitra",
+    summary: "Wearable assistive device for helping hearing-impaired individuals safely navigate roads",
+    points: [
+      "Designed a wearable assistive device for hearing-impaired individuals",
+      "Developed a sensor-based alert system using ultrasonic sensors",
+      "Implemented multi-level warning system with LED indicators and vibration motors",
+      "Built and tested a working prototype using Arduino",
+      "Completed simulations in Tinkercad for validation"
+    ],
+    tags: ["Arduino", "Embedded C", "Ultrasonic Sensors"],
+    github: null,
   },
 ];
 
@@ -101,7 +119,7 @@ export const interests = [
   {
     label: "Bharatanatyam",
     detail: "Professionally trained classical dance with Diploma in Bharatanatyam",
-    icon: "🎭",
+    icon: "💃",
   },
   {
     label: "Photography",

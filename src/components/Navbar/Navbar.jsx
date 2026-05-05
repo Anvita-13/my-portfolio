@@ -28,12 +28,29 @@ export default function Navbar({ name }) {
   useEffect(() => {
     const ids = NAV_LINKS.map(l => l.id);
     const targets = ids.map(id => document.getElementById(id)).filter(Boolean);
+    
+    // Also observe hero section to clear activeId when hero is visible
+    const heroTarget = document.getElementById('hero');
+    
     const obs = new IntersectionObserver(
       entries => {
-        entries.forEach(e => { if (e.isIntersecting) setActiveId(e.target.id); });
+        // Check if hero is intersecting
+        const heroEntry = entries.find(e => e.target.id === 'hero');
+        if (heroEntry && heroEntry.isIntersecting) {
+          setActiveId('');
+          return;
+        }
+        
+        // Otherwise, find the first nav section that's intersecting
+        const activeEntry = entries.find(e => e.isIntersecting && e.target.id !== 'hero');
+        if (activeEntry) {
+          setActiveId(activeEntry.target.id);
+        }
       },
       { rootMargin: '-40% 0px -55% 0px' }
     );
+    
+    if (heroTarget) targets.unshift(heroTarget);
     targets.forEach(t => obs.observe(t));
     return () => obs.disconnect();
   }, []);
@@ -54,7 +71,7 @@ export default function Navbar({ name }) {
         <div className="container navbar__inner">
           {/* Clicking the logo scrolls to top/hero */}
           <span className="navbar__logo" onClick={scrollToTop} role="button" tabIndex={0}>
-            {name.split(' ')[0]}
+            {name}
           </span>
 
           {/* Desktop links */}

@@ -31,7 +31,9 @@ export default function About({ about, personal }) {
               <div className="about__info-icon">📧</div>
               <div>
                 <p className="about__info-label">Email</p>
-                <p className="about__info-value">{personal.email}</p>
+                <a href={`mailto:${personal.email}`} className="about__info-email-link">
+                  {personal.email}
+                </a>
               </div>
             </div>
 

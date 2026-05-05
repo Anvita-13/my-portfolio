@@ -59,6 +59,21 @@
   color: var(--color-text);
 }
 
+.about__info-email-link {
+  font-size: 0.97rem;
+  font-weight: 500;
+  color: var(--color-accent);
+  text-decoration: none;
+  transition: color var(--transition);
+  border-bottom: 2px solid transparent;
+  transition: color var(--transition), border-bottom-color var(--transition);
+}
+
+.about__info-email-link:hover {
+  color: var(--color-accent2);
+  border-bottom-color: var(--color-accent2);
+}
+
 /* Divider line between info items */
 .about__info-item + .about__info-item {
   padding-top: 20px;

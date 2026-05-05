@@ -1,9 +1,11 @@
 /* Skills.css */
 
 .skills__grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
   gap: 20px;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 .skills__category {
@@ -13,6 +15,8 @@
   padding: 24px 26px;
   box-shadow: var(--shadow-sm);
   transition: box-shadow var(--transition), transform var(--transition);
+  flex: 0 0 auto;
+  min-width: 280px;
 }
 .skills__category:hover {
   box-shadow: var(--shadow-md);

@@ -14,12 +14,6 @@ export default function Hero({ personal }) {
     <section className="hero" id="hero">
       <div className="container">
         <div className="hero__inner">
-          {/* Status badge */}
-          <div className="hero__badge">
-            <span className="hero__badge-dot" />
-            Open to opportunities
-          </div>
-
           {/* Name */}
           <h1 className="hero__name">
             {firstName} <span>{lastName}</span>
@@ -28,8 +22,11 @@ export default function Hero({ personal }) {
           {/* Title */}
           <p className="hero__title">{personal.title}</p>
 
-          {/* Tagline */}
-          <p className="hero__tagline">{personal.tagline}</p>
+          {/* Status badge */}
+          <div className="hero__badge">
+            <span className="hero__badge-dot" />
+            Open to opportunities
+          </div>
 
           {/* CTA buttons */}
           <div className="hero__cta">

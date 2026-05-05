@@ -9,7 +9,8 @@ export function useInView(threshold = 0.15) {
       ([entry]) => {
         if (entry.isIntersecting) {
           entry.target.classList.add('visible');
-          observer.unobserve(entry.target); // animate once
+        } else {
+          entry.target.classList.remove('visible');
         }
       },
       { threshold }
