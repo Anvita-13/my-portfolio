@@ -43,28 +43,6 @@ This portfolio serves as a centralized platform to present my work, technical ca
 
 ---
 
-## Project Structure
-
-```text
-my-portfolio/
-│
-├── public/                 # Static assets
-├── src/                    # Source code
-│   ├── components/         # Reusable React components mapped by section
-│   ├── data/               # Centralized content definitions
-│   ├── hooks/              # Custom React hooks
-│   ├── App.jsx             # Main application layout
-│   ├── index.css           # Global design tokens and styles
-│   └── main.jsx            # Application entry point
-│
-├── Dockerfile              # Multi-stage Docker build configuration
-├── .dockerignore           # Exclusions for Docker build context
-├── .gitignore              # Git exclusions
-├── package.json            # Node.js dependencies
-└── README.md               # Project documentation
-```
-
----
 
 ## Installation and Setup
 
