@@ -130,6 +130,15 @@
   color: var(--color-accent);
 }
 
+.experience__github-spacer {
+  height: 20px;
+}
+
+/* Make github item have less top padding since there's no label */
+.experience__info-item--github {
+  padding-top: 0;
+}
+
 /* GitHub link — same style as project-card__github-link */
 .experience__github-link {
   display: inline-block;
@@ -145,18 +154,6 @@
 .experience__github-link:hover {
   color: var(--color-accent2);
   border-bottom-color: var(--color-accent2);
-}
-
-.experience__github-link--disabled {
-  opacity: 0.55;
-  cursor: default;
-  border-bottom: none;
-}
-
-.experience__github-note {
-  font-size: 0.78rem;
-  font-weight: 400;
-  color: var(--color-muted);
 }
 
 /* ── Responsive ──────────────────────────────────────────── */

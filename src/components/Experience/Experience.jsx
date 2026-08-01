@@ -44,13 +44,12 @@ export default function Experience({ experience }) {
                     </div>
                   </div>
 
-                  {/* Divider */}
-                  <div className="experience__info-divider" />
+                  {/* Spacer to replace divider + label */}
+                  <div className="experience__github-spacer" />
 
-                  {/* GitHub link block */}
-                  <div className="experience__info-item">
+                  {/* GitHub link block — always visible */}
+                  <div className="experience__info-item experience__info-item--github">
                     <div>
-                      <p className="experience__info-label">Repository</p>
                       {exp.github ? (
                         <a
                           href={exp.github}
@@ -61,8 +60,8 @@ export default function Experience({ experience }) {
                           View on GitHub →
                         </a>
                       ) : (
-                        <span className="experience__github-link experience__github-link--disabled">
-                          View on GitHub → <span className="experience__github-note">(link coming soon)</span>
+                        <span className="experience__github-link">
+                          View on GitHub →
                         </span>
                       )}
                     </div>
