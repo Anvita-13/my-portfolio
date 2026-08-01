@@ -20,7 +20,7 @@ export const education = [
     institution: "Vellore Institute of Technology",
     location: "Chennai, Tamil Nadu",
     degree: "B.Tech in Computer Science and Engineering",
-    detail: "CGPA: 8.38",
+    detail: "CGPA: 8.36",
     period: "July 2024 - May 2028",
     status: "Pursuing",
   },
