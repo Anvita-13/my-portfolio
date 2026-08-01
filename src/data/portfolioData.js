@@ -9,11 +9,11 @@ export const personal = {
   location: "Chennai",
   phone: "+91 89399 48844",
   email: "anvitaarun1@gmail.com",
-  github: "https://github.com/Anvita-13",          
-  linkedin: "https://www.linkedin.com/in/anvita-arun-b91775365/",        
+  github: "https://github.com/Anvita-13",
+  linkedin: "https://www.linkedin.com/in/anvita-arun-b91775365/",
 };
 
-export const about = `I'm a third-year B.Tech Computer Science student at VIT Chennai, also pursuing a BS in Data Science and Applications from IIT Madras. I'm passionate about building real-world systems that solve meaningful problems — from predictive analytics and database design to web extensions and embedded electronics. Outside of tech, I'm a classically trained Bharatanatyam dancer and Carnatic musician, and I love capturing the world through photography.`;
+export const about = `I'm a third-year B.Tech Computer Science student at VIT Chennai, also pursuing a BS in Data Science and Applications from IIT Madras. I have practical experience in machine learning, data analytics, database systems, data engineering, and AI-powered application development, with a passion for building intelligent, data-driven solutions using scalable AI/ML technologies for real-world business applications. Outside of tech, I'm a classically trained Bharatanatyam dancer and Carnatic musician, and I enjoy capturing the world through photography.`;
 
 export const education = [
   {
@@ -21,7 +21,7 @@ export const education = [
     location: "Chennai, Tamil Nadu",
     degree: "B.Tech in Computer Science and Engineering",
     detail: "CGPA: 8.38",
-    period: "July 2024 – May 2028",
+    period: "July 2024 - May 2028",
     status: "Pursuing",
   },
   {
