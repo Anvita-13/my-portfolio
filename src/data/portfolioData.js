@@ -4,16 +4,16 @@
 
 export const personal = {
   name: "Anvita Arun",
-  title: "Second Year Engineering Student",
+  title: "Third Year Engineering Student",
   tagline: "Open to opportunities",
   location: "Chennai",
   phone: "+91 89399 48844",
   email: "anvitaarun1@gmail.com",
-  github: "",          // optional: add your GitHub URL
-  linkedin: "",        // optional: add your LinkedIn URL
+  github: "https://github.com/Anvita-13",          
+  linkedin: "https://www.linkedin.com/in/anvita-arun-b91775365/",        
 };
 
-export const about = `I'm a second-year B.Tech Computer Science student at VIT Chennai, also pursuing a BS in Data Science and Applications from IIT Madras. I'm passionate about building real-world systems that solve meaningful problems — from predictive analytics and database design to web extensions and embedded electronics. Outside of tech, I'm a classically trained Bharatanatyam dancer and Carnatic musician, and I love capturing the world through photography.`;
+export const about = `I'm a third-year B.Tech Computer Science student at VIT Chennai, also pursuing a BS in Data Science and Applications from IIT Madras. I'm passionate about building real-world systems that solve meaningful problems — from predictive analytics and database design to web extensions and embedded electronics. Outside of tech, I'm a classically trained Bharatanatyam dancer and Carnatic musician, and I love capturing the world through photography.`;
 
 export const education = [
   {
@@ -71,6 +71,33 @@ export const skills = [
     category: "Electronics & Embedded",
     items: ["Arduino"],
   },
+  {
+    category: "AI/GENAI",
+    items: ["Prompt Engineering", "LLM Application Development", "Text-to-SQL", "Gemini API", "Ollama", "AI Workflow Design"],
+  },
+  {
+    category: "DATA ENGINEERING",
+    items: ["ETL Pipelines", "Data Warehousing (Medallion Architecture)", "Metadata Management", "Star Schema Design"],
+  },
+  {
+    category: "DATABASES",
+    items: ["PostgreSQL", "Oracle Database", "SQL", "SQLITE"],
+  },
+];
+
+export const experience = [
+  {
+    company: "Sedin Technologies",
+    role: "Internship",
+    period: "May 2026 - June 2026",
+    project: "Conversational Analytics Platform",
+    points: [
+      "Designed and developed a modular, metadata-driven conversational analytics/AI platform that enables natural language querying across relational databases",
+      "Implemented automated schema discovery, metadata generation, and a plugin-based architecture to support secure, database-agnostic Text-to SQL analytics with standardized data warehousing workflows"
+    ],
+    tags: ["Python", "Streamlit", "PostgreSQL/Oracle Database", "SQL", "Pandas", "LLM APIs (Gemini/Ollama)"],
+    github: "" // link to be given later
+  }
 ];
 
 export const projects = [

@@ -52,6 +52,26 @@ export default function About({ about, personal }) {
                 <p className="about__info-value">{personal.title}</p>
               </div>
             </div>
+
+            <div className="about__info-item">
+              <div className="about__info-icon">🔗</div>
+              <div>
+                <p className="about__info-label">GitHub</p>
+                <a href={personal.github} target="_blank" rel="noopener noreferrer" className="about__info-email-link">
+                  {personal.github}
+                </a>
+              </div>
+            </div>
+
+            <div className="about__info-item">
+              <div className="about__info-icon">💼</div>
+              <div>
+                <p className="about__info-label">LinkedIn</p>
+                <a href={personal.linkedin} target="_blank" rel="noopener noreferrer" className="about__info-email-link">
+                  {personal.linkedin}
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
