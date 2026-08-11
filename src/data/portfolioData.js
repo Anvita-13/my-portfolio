@@ -96,7 +96,7 @@ export const experience = [
       "Implemented automated schema discovery, metadata generation, and a plugin-based architecture to support secure, database-agnostic Text-to SQL analytics with standardized data warehousing workflows"
     ],
     tags: ["Python", "Streamlit", "PostgreSQL/Oracle Database", "SQL", "Pandas", "LLM APIs (Gemini/Ollama)"],
-    github: "" // link to be given later
+    github: "https://github.com/Anvita-13/ai-conversational-analytics-platform.git"
   }
 ];
 
